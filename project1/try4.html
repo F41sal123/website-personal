@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Faisal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="try4.css">
+</head>
+<body> 
+        <style>
+        body, html, #app {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #app {
+          overflow: hidden;
+          color: #ffffff;
+          font-family: 'Montserrat',
+          sans-serif;
+          text-align: center;
+          text-shadow: 0 0 5px 
+        #ffffff, 0 0 20px #000,
+          0 0 30px #000;
+        }
+
+        #app h1 {
+            --fontSize: 60px;
+            --lineHeight: 80px;
+            width: auto;
+            height: calc(2 * var(--lineHeight));
+            line-height: var(--lineHeight);
+            margin: calc(50vh - var(--lineHeight)) auto 0;
+            font-size: var(--fontSize);
+        }
+
+        #app a {
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #app canvas {
+            display: block;
+            position: fixed;
+            z-index: -1;
+            top: 0;
+        }
+
+
+/* -- YouTube Link Styles -- */
+
+#source-link {
+  top: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+#yt-link {  
+  top: 10px;
+}
+
+#yt-link > i {
+  color: rgb(219, 31, 106); 
+
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
+
+
+    </style>
+    <div class="navbar">
+        <div class="nav-left">
+            <h2 data-value="Mochamad Faisal">Mochamad Faisal</h2>
+            <h2 data-value="Frontend Web Developer">Consultant Property</h2>
+<script>
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZSASDASDASDASDAASDA";
+
+let interval = null;
+
+document.querySelector("h2").onmouseover = event => {  
+  let iteration = 0;
+
+  clearInterval(interval);
+
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+
+        return letters[Math.floor(Math.random() * 36)]
+      })
+      .join("");
+
+    if(iteration >= event.target.dataset.value.length){ 
+      clearindex(index);
+    }
+
+    iteration += 1 / 3;
+  }, 30);
+}
+</script>
+<script>
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZSASDASDASDASDAASDA";
+
+let interval = null;
+
+document.querySelector("h1").onmouseover = event => {  
+  let iteration = 0;
+
+  clearInterval(interval);
+
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+
+        return letters[Math.floor(Math.random() * 36)]
+      })
+      .join("");
+
+    if(iteration >= event.target.dataset.value.length){ 
+      clearindex(index);
+    }
+
+    iteration += 1 / 3;
+  }, 30);
+}
+</script>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class="nav-item"><a href="login1.html" class="nav-link">LOGIN</a></li>
+                <label for="service"></label>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<body>
+    <img src="taman3.jpg" style="width:100%;">
+</body>
+
+<script src="try4.js"></script>
+
+</html>
